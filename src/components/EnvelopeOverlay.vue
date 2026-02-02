@@ -44,6 +44,7 @@
 
 <script setup>
 import { ref, computed } from 'vue'
+import bgUrl from '/src/assets/images/bg.jpg'
 
 const visible = ref(true)
 const contentHidden = ref(false)
@@ -52,7 +53,7 @@ const overlayLifted = ref(false)
 // Background illustration (use local first, then remote as visual fallback)
 const bgStyle = computed(() => ({
   backgroundImage:
-    "url('/src/assets/images/background.jpg'), url('/src/assets/images/bg.jpg')",
+    "url('/src/assets/images/background.jpg'), url('" + bgUrl + "')",
 }))
 
 const contentClasses = computed(() => ({
