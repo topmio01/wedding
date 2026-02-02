@@ -24,10 +24,10 @@
         <!-- สำคัญ: ต้องกำหนดความสูงให้พ่อของ Gallery -->
         <div class="w-full h-[60vh] rounded-3xl overflow-hidden shadow-lg">
           <Gallery :items="[
-            { image: '/images/gallery/1.jpg', text: 'Moment 1' },
-            { image: '/images/gallery/2.jpg', text: 'Moment 2' },
-            { image: '/images/gallery/3.jpg', text: 'Moment 3' },
-            { image: '/images/gallery/4.jpg', text: 'Moment 4' }
+            { image: PhotoUrl1, text: 'Moment 1' },
+            { image: PhotoUrl2, text: 'Moment 2' },
+            // { image: '/public/images/gallery/3.jpg', text: 'Moment 3' },
+            // { image: '/public/images/gallery/4.jpg', text: 'Moment 4' }
           ]" :bend="3" textColor="#ffffff" :borderRadius="0.05" font="bold 30px Figtree" :scrollSpeed="2"
             :scrollEase="0.05" />
         </div>
@@ -39,6 +39,8 @@
 </template>
 
 <script setup>
+import PhotoUrl1 from '/src/assets/images/1.jpg'
+import PhotoUrl2 from '/src/assets/images/2.jpg'
 import HeroHeader from '../components/HeroHeader.vue'
 import ScheduleSection from '../components/ScheduleSection.vue'
 import VenueSection from '../components/VenueSection.vue'

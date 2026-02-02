@@ -19,7 +19,7 @@
         <div class="relative mx-auto rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/10 bg-white/70 backdrop-blur-sm">
           <img
             class="w-full h-72 md:h-96 object-cover object-center"
-            src="/images/s.jpg"
+            src="/src/assets/images/s.jpg"
             alt="Envelope"
             @error="($event.target.src = 'https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2070&auto=format&fit=crop')"
           />
@@ -52,7 +52,7 @@ const overlayLifted = ref(false)
 // Background illustration (use local first, then remote as visual fallback)
 const bgStyle = computed(() => ({
   backgroundImage:
-    "url('/images/background.jpg'), url('/images/bg.jpg",
+    "url('/src/assets/images/background.jpg'), url('/src/assets/images/bg.jpg')",
 }))
 
 const contentClasses = computed(() => ({
