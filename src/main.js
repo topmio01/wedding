@@ -1,0 +1,13 @@
+import { createApp } from 'vue'
+import { createRouter, createWebHashHistory } from 'vue-router'
+import App from './App.vue'
+import './assets/index.css'
+import routes from './router'
+
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes,
+  scrollBehavior() { return { top: 0 } }
+})
+
+createApp(App).use(router).mount('#app')
