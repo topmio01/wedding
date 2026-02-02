@@ -19,14 +19,15 @@
         <div class="relative mx-auto rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/10 bg-white/70 backdrop-blur-sm">
           <img
             class="w-full h-72 md:h-96 object-cover object-center"
-            src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2070&auto=format&fit=crop"
+            src="/images/s.jpg"
             alt="Envelope"
+            @error="($event.target.src = 'https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2070&auto=format&fit=crop')"
           />
           <!-- Soft overlay text -->
           <div class="absolute inset-0 flex flex-col items-center justify-center text-stone-800/90">
             <p class="uppercase tracking-[0.35em] text-xs md:text-sm mb-2">Save the Date</p>
-            <p class="font-wedding text-3xl md:text-4xl mb-1">Kwangdaw & Dean</p>
-            <p class="text-xs md:text-sm">Sunday, 2 February 2026</p>
+            <p class="font-wedding text-3xl md:text-4xl mb-1">Tanaporn & Bundit</p>
+            <p class="text-xs md:text-sm">Sunday, 2 August 2026</p>
           </div>
         </div>
       </div>
@@ -48,10 +49,10 @@ const visible = ref(true)
 const contentHidden = ref(false)
 const overlayLifted = ref(false)
 
-// Background illustration similar to reference (soft watercolor forest)
+// Background illustration (use local first, then remote as visual fallback)
 const bgStyle = computed(() => ({
   backgroundImage:
-    "url('https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2070&auto=format&fit=crop')",
+    "url('/images/background.jpg'), url('/images/bg.jpg",
 }))
 
 const contentClasses = computed(() => ({

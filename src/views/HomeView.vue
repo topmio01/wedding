@@ -2,24 +2,24 @@
   <div>
     <HeroHeader />
 
-    <!-- <section id="schedule" class="py-20 px-6 text-center">
+    <section id="schedule" class="min-h-screen bg-amber-50/40 flex items-center justify-center px-6">
       <ScheduleSection />
     </section>
 
-    <section class="py-20 bg-stone-100 px-6 text-center">
+     <section class="min-h-screen py-20 bg-stone-100 px-6 text-center">
       <VenueSection />
-    </section>
+    </section> 
 
-    <section class="py-20 px-6 max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+    <section id="schedule" class="min-h-screen bg-amber-50/40 flex items-center justify-center px-6">
       <RsvpSection />
-      <GiftSection />
+      <!-- <GiftSection /> -->
     </section>
 
-    <section class="py-20 px-6 bg-white shadow-inner">
+    <!-- <section class="py-20 px-6 bg-white shadow-inner">
       <WishesSection />
-    </section>
+    </section> -->
 
-    <SiteFooter /> -->
+    <SiteFooter />
   </div>
 </template>
 
@@ -31,4 +31,5 @@ import RsvpSection from '../components/RsvpSection.vue'
 import GiftSection from '../components/GiftSection.vue'
 import WishesSection from '../components/WishesSection.vue'
 import SiteFooter from '../components/SiteFooter.vue'
+import EnvelopeOverlay from '../components/EnvelopeOverlay.vue'
 </script>
