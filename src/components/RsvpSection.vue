@@ -62,9 +62,11 @@
       </button>
     </form>
   </div>
+
 </template>
 
 <script setup>
+
 import { ref, reactive } from 'vue';
 
 // 1. ตัวแปรสำหรับเก็บข้อมูลฟอร์ม
